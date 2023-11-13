@@ -12,5 +12,10 @@ public class Sitp { //NOmbre del Archivo
 
                 RutaFeriado rutaFeriado = new RutaFeriado();
 
+                // Agregar estaciones a los buses
+                Transmi1.agregarEstacion("Estacion1");
+                Transmi1.agregarEstacion("Estacion2");
+                Transmi1.agregarEstacion("Estacion3");
+
     }
 }
