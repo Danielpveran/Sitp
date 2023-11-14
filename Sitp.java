@@ -38,15 +38,28 @@ public class Sitp { //NOmbre del Archivo
                     Opcion = Scanner.nextInt();
 
                     switch (Opcion) {
-                        case 1;
-                            System.out.println("1. Consultar paradas de un bus");
+                        case 1:
+                            System.out.println("1. Ingrese la ruta a buscar");
+                            String numeroRuta = Scanner.next();
+                                if (numeroRuta.equals(Transmi1.getNumeroRuta())) {
+                                    System.out.println("Paradas del bus " + numeroRuta + ": " + Transmi1.getEstaciones());
+                                }
+
+                                else if (numeroRuta.equals(Transmi1.getNumeroRuta())) {
+                                    System.out.println("Paradas del bus " + numeroRuta + ": " + Transmi2.getEstaciones());
+                                }
+
+                                else {
+                                    System.out.print("Ingrese su opción: ");
+                                }
+                                    
+                    }
                             
                             break;
                     
                         default:
                             break;
-                    }
                 }
-                
     }
+                
 }
