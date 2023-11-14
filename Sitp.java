@@ -44,7 +44,7 @@ public class Sitp { //NOmbre del Archivo
                                     System.out.println("Paradas del bus " + numeroRuta + ": " + Transmi1.getEstaciones());
                                 }
 
-                                else if (numeroRuta.equals(Transmi1.getNumeroRuta())) {
+                                else if (numeroRuta.equals(Transmi2.getNumeroRuta())) {
                                     System.out.println("Paradas del bus " + numeroRuta + ": " + Transmi2.getEstaciones());
                                 }
 
@@ -74,14 +74,14 @@ public class Sitp { //NOmbre del Archivo
 
 //Se crean las clases para bus
 
-class bus {
+class Bus {
 
     private String Numero_Ruta;
     //se guarda como un string el numero de ruta 
     private ArrayList<String> Estaciones;
     //Se guarda en un array la lista de estaciones
 
-    public bus(String Numero_Ruta) {
+    public Bus(String Numero_Ruta) {
         //Recibe el numero de ruta como parametro iniziando con numero ruta  y crea un nuevo array para estaciones
         this.Numero_Ruta = Numero_Ruta;
         this.Estaciones = new ArrayList<>();
