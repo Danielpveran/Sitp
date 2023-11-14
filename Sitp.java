@@ -72,7 +72,7 @@ public class Sitp { //NOmbre del Archivo
     }
 }
 
-//Se crean las clases para bus y para las estaciones
+//Se crean las clases para bus
 
 class bus {
 
@@ -80,8 +80,26 @@ class bus {
     //se guarda como un string el numero de ruta 
     private ArrayList<String> Estaciones;
     //Se guarda en un array la lista de estaciones
+
     public bus(String Numero_Ruta) {
+        //Recibe el numero de ruta como parametro iniziando con numero ruta  y crea un nuevo array para estaciones
         this.Numero_Ruta = Numero_Ruta;
         this.Estaciones = new ArrayList<>();
     }
+
+        public void agregarEstacion(String estacion) {
+        Estaciones.add(estacion);
+    }
+
+        public ArrayList<String> getEstaciones() {
+        return Estaciones;
+    }
+
+        public String getNumeroRuta() {
+        return Numero_Ruta;
+    }
+}
+
+class{
+ private ArrayList<String> rutasFeriado;
 }
