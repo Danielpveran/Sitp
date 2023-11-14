@@ -26,8 +26,6 @@ public class Sitp { //NOmbre del Archivo
 
                 //Menu
                 int Opcion;
-                
-                System.out.println("quiere iniciar la app");
 
                 while (true) {
                     System.out.println("Menú:");
@@ -57,6 +55,15 @@ public class Sitp { //NOmbre del Archivo
                         case 2:
                         System.out.println("Rutas en días feriados: " + rutaFeriado.getRutasFeriado());
                         break;
+
+                        case 3:
+                        System.out.println("Saliendo del programa. ¡Hasta luego!");
+                        break;
+
+                        default:
+                        System.out.println("Opcion invalida");
+                        break;
+
                     }
                             
                 }
