@@ -29,8 +29,23 @@ public class Sitp { //NOmbre del Archivo
                 
                 System.out.println("quiere iniciar la app");
 
-                while (1) {
+                while (true) {
+                    System.out.println("Menú:");
+                    System.out.println("1. Consultar paradas de un bus");
+                    System.out.println("2. Consultar rutas en días feriados");
+                    System.out.println("3. Salir");
+                    System.out.print("Ingrese su opción: ");
+                    Opcion = Scanner.nextInt();
+
+                    switch (Opcion) {
+                        case 1;
+                            System.out.println("1. Consultar paradas de un bus");
+                            
+                            break;
                     
+                        default:
+                            break;
+                    }
                 }
                 
     }
