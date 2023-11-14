@@ -100,6 +100,18 @@ class bus {
     }
 }
 
-class{
- private ArrayList<String> rutasFeriado;
+class RutaFeriado{
+    private ArrayList<String> rutasFeriado;
+
+    public RutaFeriado() {
+        this.rutasFeriado = new ArrayList<>();
+    }
+
+    public void agregarRutaFeriado(String ruta) {
+        rutasFeriado.add(ruta);
+    }
+
+    public ArrayList<String> getRutasFeriado() {
+        return rutasFeriado;
+    }
 }
