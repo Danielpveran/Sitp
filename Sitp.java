@@ -52,13 +52,13 @@ public class Sitp { //NOmbre del Archivo
                                 else {
                                     System.out.print("Ingrese su opción: ");
                                 }
-                                    
+                                break;
+
+                        case 2:
+                        System.out.println("Rutas en días feriados: " + rutaFeriado.getRutasFeriado());
+                        break;
                     }
                             
-                            break;
-                    
-                        default:
-                            break;
                 }
     }
                 
