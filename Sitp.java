@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Sitp { //NOmbre del Archivo
 
@@ -67,6 +68,20 @@ public class Sitp { //NOmbre del Archivo
                     }
                             
                 }
+
     }
-                
+}
+
+//Se crean las clases para bus y para las estaciones
+
+class bus {
+
+    private String Numero_Ruta;
+    //se guarda como un string el numero de ruta 
+    private ArrayList<String> Estaciones;
+    //Se guarda en un array la lista de estaciones
+    public bus(String Numero_Ruta) {
+        this.Numero_Ruta = Numero_Ruta;
+        this.Estaciones = new ArrayList<>();
+    }
 }
